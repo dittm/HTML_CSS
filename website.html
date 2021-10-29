@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <link rel="stylesheet" href="main.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Teilnahme an der Umfrage</title>
+</head>
+
+<div class="container">
+ <header class="header">
+   <h1 id="title">Teilnahme an der Umfrage</h1>
+   <p id="sub-title">(Service-Umfrage)</p>
+  </header>
+
+<main>
+  <form id="survey-form">
+
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Name"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Email"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Alter<span class="clue"> (optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Alter"
+      />
+    </div>
+
+    <div class="form-group">
+      <p>Welchen Service haben Sie genutzt?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Service</option>
+        <option value="service1">Service 1</option>
+        <option value="service2">Service 2</option>
+        <option value="service3">Service 3</option>
+        <option value="preferNo">keine Angabe</option>
+      </select>
+    </div>
+
+     <div class="form-group">
+      <p>Würden Sie uns weiterempfehlen?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="yes"
+          type="radio"
+          class="input-radio"
+          checked/>
+        Ja</label>
+
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"/>
+        Vielleicht</label>
+
+      <label>
+        <input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"/>
+        Nicht sicher</label>
+    </div>
+
+        <div class="form-group">
+      <p>Haben Sie Verbesserungsvorschläge?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Kommentar schreiben ...">
+      </textarea>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Aus welchen Gründen haben Sie unseren Service genutzt?
+        <span class="clue">(Mehrere Optionen möglich)</span>
+      </p>
+
+      <label>
+        <input
+          name="prefer"
+          value="reason1"
+          type="checkbox"
+          class="input-checkbox"/>
+        Grund 1</label>
+
+      <label>
+        <input
+          name="prefer"
+          value="reason2"
+          type="checkbox"
+          class="input-checkbox"/>
+        Grund 2</label>
+
+      <label>
+        <input
+          name="prefer"
+          value="reason3"
+          type="checkbox"
+          class="input-checkbox"/>
+        Grund 3</label>
+
+      <label>
+        <input
+          name="prefer"
+          value="reason4"
+          type="checkbox"
+          class="input-checkbox"/>
+        Grund 4</label>
+
+      <label>
+        <input
+          name="prefer"
+          value="reason5"
+          type="checkbox"
+          class="input-checkbox"/>
+        Grund 5</label>
+
+      <label>
+        <input
+          name="prefer"
+          value="reason6"
+          type="checkbox"
+          class="input-checkbox"/>
+        Grund 6</label>
+    </div>
+
+     <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Senden
+      </button>
+    </div>
+
+
+  </form>
+
+  <div class="video">
+<p>Als Entschuldigung für das viele Fragestellen, gibt es hier gute Musik:</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/p00v9ZFhWJM" title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+    </div>
+
+</main>
+</div>
+
+</html>
